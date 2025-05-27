@@ -96,7 +96,7 @@ app.post('/api/create-preference', async (req, res) => {
         failure: `${process.env.FRONTEND_URL}/failure`,
         pending: `${process.env.FRONTEND_URL}/pending`
       },
-      // auto_return: 'approved' as const,
+      auto_return: 'approved' as const,
       payer: payer ? {
         name: payer.name,
         email: payer.email,
